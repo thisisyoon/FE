@@ -9,6 +9,6 @@ Minimum spec.
 
 ================================================
 You can use any js framework such as jQuery, prototype, and Sencha(ExtJS) or pure js.
-
+If you have questions, please feel free to ask me using "issues" on github.
 
 Let's build.
