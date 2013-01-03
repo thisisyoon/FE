@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<meta charset="utf-8"/>
+    <head>
+        <title>Carousel</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="prefetch"   href="css/styles.css"/>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+
+        <script>
+        $(document).ready(function()
+     	{
+     		$('#carousel').carouFredSel({
+				width: '100%',
+				height: '100%',
+				items: {
+					visible: 3,
+					start: -1,
+					width: 940,
+					height: 560
+				},
+				scroll: {
+					items: 1,
+					duration: 1000,
+					timeoutDuration: 3000
+				},
+				prev: '.prev',
+				next: '.next',
+				auto: {
+					play: false
+				}
+			});
+
+			$('#wrapper .prev img').hover(
+				function(){
+					this.src = 'assets/btn-featureleft-on.png';
+				},
+				function(){
+					this.src = 'assets/btn-featureleft.png';
+				}
+			);
+
+			$('#wrapper .next img').hover(
+				function(){
+					this.src = 'assets/btn-featureright-on.png';
+				},
+				function(){
+					this.src = 'assets/btn-featureright.png';
+				}
+			);
+
+		});
+        </script>
+    </head>
+    <body>
+    	<div id="wrapper">
+			<div id="carousel">
+				<div class="slide">
+					<img src="images/aidie-940.jpg"/>
+					<div>
+						<p class="title">Aidie</p>
+						<h4>by Douglas</h4>
+						<p>Aidie is KN Group's mascot robot that has been greeting the employees every morning. Its creator, Professor Harvey, takes Aidie on the day of his resignation and risks his life to protect it from the company. What secrets does this one robot hold?</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/blow-940.jpg"/>
+					<div>
+						<p class="title">Blow: Eagle of Laftal</p>
+						<h4>by Bella</h4>
+						<p>An imaginative fantasy series created by Bella that combines exquisite artwork with a mythical story. Twenty years after the eagle landed at the site of her mother's tomb, Sisra continues her mission to retrieve the legendary Sun Stone, which is said to have unimaginable powers.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/danemen-940.jpg"/>
+					<div>
+						<p class="title">DaneMen</p>
+						<h4>by David Daneman</h4>
+						<p>"Life is a tragedy when seen in close-up, but a comedy in long-shot."</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/lilimo-940.jpg"/>
+					<div>
+						<p class="title">Lili &amp; Mo</p>
+						<h4>by Pary Shah</h4>
+						<p>A lighthearted peek into the lives (and misunderstandings) of a new couple, inspired by true events.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/onmorej-940.jpg"/>
+					<div>
+						<p class="title">One More J</p>
+						<h4>by Tato</h4>
+						<p>From humble beginnings come some great things. Join Jay on his journey of self-actualization. Never give up! One more try! One More J!</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/satirical-940.jpg"/>
+					<div>
+						<p class="title">SatiriCAL</p>
+						<h4>by Lisa Ou &amp; Honest Chung</h4>
+						<p>Legendary stories from the most liberal university on the planet. Oh, and <br/>@$#*% Stanfurd!</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/seollee-940.jpg"/>
+					<div>
+						<p class="title">Seol Lee</p>
+						<h4>by Mosquito</h4>
+						<p>Seol Lee leads a double life as a secret agent. One night, her family and friends fall victims to an unknown group of terrorists. Who are they and why? Seol Lee sets out to discover the truth behind this painful tragedy.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/tomorrow-940.jpg"/>
+					<div>
+						<p class="title">Tomorrow</p>
+						<h4>by Mir.k & Rizbee</h4>
+						<p>In the year 2020, the depravity of mankind has taken its toll. On the evening news, crime rates soar to unprecedented levels, war rages on, hate crimes worsen in severity, and one begins to wonder if there's hope for humanity.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="images/winterfest-940.jpg"/>
+					<div>
+						<p class="title">Tapastic Winterfest Contest</p>
+						<h4><a href="http://tapastic-group.deviantart.com/journal/Tapastic-Winterfest-340873077">Visit our Contest Page on deviantART</a></h4>
+						<p>Join our winter-themed contest for a chance to show your creativity, have fun, and win prizes.</p>
+					</div>
+				</div>
+			</div>
+			<a class="prev btn-feature left"><img src="assets/btn-featureleft.png" alt="Arrow Prev"></a>
+			<a class="next btn-feature right"><img src="assets/btn-featureright.png" alt="Arrow Next"></a>
+		</div>
+    </body>
+</html>
