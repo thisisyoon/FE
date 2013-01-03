@@ -55,12 +55,15 @@ body {
 #carousel .slide div {
 	position: absolute;
 	top: 225px;
-	width: 300px;
+	width: 350px;
 	margin-left: 70px;
 }
 #carousel .slide div * {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
+	text-shadow: 2px 2px #777;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#777777,direction=45);
+	opacity: 0.9;
 }
 #carousel .slide div p.title{
 	font-family: gothicNarrow, Impact, Charcoal, sans-serif;
